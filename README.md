@@ -12,7 +12,7 @@ var image = capture.CaptureScreen().GetImageSource();
 * capture a window to raw image
 ``` csharp
 var capture = ScreenCaptureProvider.Provide();
-byte[] data = capture.CaptureWindow(hWnd).GetRawBytes();
+byte[] data = capture.CaptureWindow(hWnd).GetBytes();
 ```
 
 # License
