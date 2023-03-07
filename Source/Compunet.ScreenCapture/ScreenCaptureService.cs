@@ -9,18 +9,18 @@ using static Compunet.ScreenCapture.Interop.User32;
 
 namespace Compunet.ScreenCapture;
 
-internal class ScreenCaptureService : IScreenCapture
+public class ScreenCaptureService : IScreenCaptureService
 {
-    public ICapturedImage CaptureScreen()
+    public ICaptureResult CaptureScreen()
     {
         var screen = CaptureWindowCore(GetDesktopWindow());
-        return new WindowCaptureInfo(screen);
+        return new CaptureResult(screen);
     }
 
-    public ICapturedImage CaptureWindow(nint hWnd)
+    public ICaptureResult CaptureWindow(nint hWnd)
     {
         var window = CaptureWindowCore(hWnd);
-        return new WindowCaptureInfo(window);
+        return new CaptureResult(window);
     }
 
     private static BitmapSource CaptureWindowCore(nint hWnd)

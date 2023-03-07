@@ -4,11 +4,11 @@ using System.Windows.Media.Imaging;
 
 namespace Compunet.ScreenCapture;
 
-internal class WindowCaptureInfo : ICapturedImage
+internal class CaptureResult : ICaptureResult
 {
     private readonly BitmapSource mBitmapSource;
 
-    public WindowCaptureInfo(BitmapSource bitmap)
+    public CaptureResult(BitmapSource bitmap)
     {
         mBitmapSource = bitmap;
     }

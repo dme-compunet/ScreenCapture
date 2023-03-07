@@ -1,22 +1,34 @@
 # ScreenCapture
-Pure WPF library for screen/window capture
+
+Pure WPF library for screen/window capture (for windows only)
 
 # Use
 
-* capture full screen to `ImageSource`
-``` csharp
-var capture = ScreenCaptureProvider.Provide();
-var image = capture.CaptureScreen().GetImageSource();
+-   capture full screen to `ImageSource` object
+
+```csharp
+var screenCapture = new ScreenCaptureService();
+var imageSource = screenCapture.CaptureScreen().GetImageSource();
 ```
 
-* capture a window to raw image
-``` csharp
-var capture = ScreenCaptureProvider.Provide();
-byte[] data = capture.CaptureWindow(hWnd).GetBytes();
+-   capture a window to image bytes data
+
+```csharp
+var screenCapture = new ScreenCaptureService();
+byte[] raw = screenCapture.CaptureWindow(hWnd).GetBytes();
+```
+
+-   capture full screen to file
+
+```csharp
+var screenCapture = new ScreenCaptureService();
+screenCapture.CaptureScreen().WriteToFile(path);
 ```
 
 # License
-MIT Licence
+
+MIT License
 
 # Author
+
 dme-compunet
