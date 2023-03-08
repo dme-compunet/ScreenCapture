@@ -15,14 +15,16 @@ var imageSource = screenCapture.CaptureScreen().GetImageSource();
 
 ```csharp
 var screenCapture = new ScreenCaptureService();
-byte[] raw = screenCapture.CaptureWindow(hWnd).GetBytes();
+var screenshot = screenCapture.CaptureWindow(hWnd);
+byte[] raw = screenshot.GetBytes();
 ```
 
 -   capture full screen to file in bmp format
 
 ```csharp
 var screenCapture = new ScreenCaptureService();
-screenCapture.CaptureScreen().WriteToFile(path, ImageFormat.Bmp);
+var screenshot = screenCapture.CaptureScreen();
+screenshot.WriteToFile(path, ImageFormat.Bmp);
 ```
 
 # License

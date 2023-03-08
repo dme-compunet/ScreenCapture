@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<Version>2.1</Version>
+		<Version>2.2</Version>
 
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Compunet.ScreenCpautre</Title>
@@ -14,8 +14,8 @@
 		<PackageIcon>compunet.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Authors>dme-compunet</Authors>
-		<AssemblyVersion>2.1</AssemblyVersion>
-		<FileVersion>2.1</FileVersion>
+		<AssemblyVersion>2.2</AssemblyVersion>
+		<FileVersion>2.2</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

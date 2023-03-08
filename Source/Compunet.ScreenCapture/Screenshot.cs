@@ -5,11 +5,11 @@ using System.Windows.Media.Imaging;
 
 namespace Compunet.ScreenCapture;
 
-internal class CaptureResult : ICaptureResult
+internal class Screenshot : IScreenshot
 {
     private readonly BitmapSource mBitmapSource;
 
-    public CaptureResult(BitmapSource bitmap)
+    public Screenshot(BitmapSource bitmap)
     {
         mBitmapSource = bitmap;
     }

@@ -11,16 +11,16 @@ namespace Compunet.ScreenCapture;
 
 public class ScreenCaptureService : IScreenCaptureService
 {
-    public ICaptureResult CaptureScreen()
+    public IScreenshot CaptureScreen()
     {
         var screen = CaptureWindowCore(GetDesktopWindow());
-        return new CaptureResult(screen);
+        return new Screenshot(screen);
     }
 
-    public ICaptureResult CaptureWindow(nint hWnd)
+    public IScreenshot CaptureWindow(nint hWnd)
     {
         var window = CaptureWindowCore(hWnd);
-        return new CaptureResult(window);
+        return new Screenshot(window);
     }
 
     private static BitmapSource CaptureWindowCore(nint hWnd)

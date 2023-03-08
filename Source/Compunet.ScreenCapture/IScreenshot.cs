@@ -4,7 +4,7 @@ using System.Windows.Media.Imaging;
 
 namespace Compunet.ScreenCapture;
 
-public interface ICaptureResult
+public interface IScreenshot
 {
     ImageSource GetImageSource();
     BitmapSource GetBitmapSource();
