@@ -5,17 +5,17 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<Version>2.0</Version>
+		<Version>2.1</Version>
 
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Compunet.ScreenCpautre</Title>
-		<Description>Pure WPF library for screen/window capture (for windows only)</Description>
+		<Description>Pure WPF library for screen/window capture (screenshot)</Description>
 		<RepositoryUrl>https://github.com/dme-compunet/ScreenCapture</RepositoryUrl>
 		<PackageIcon>compunet.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Authors>dme-compunet</Authors>
-		<AssemblyVersion>2.0</AssemblyVersion>
-		<FileVersion>2.0</FileVersion>
+		<AssemblyVersion>2.1</AssemblyVersion>
+		<FileVersion>2.1</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

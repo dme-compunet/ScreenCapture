@@ -1,6 +1,6 @@
 # ScreenCapture
 
-Pure WPF library for screen/window capture (for windows only)
+Pure WPF library for screen/window capture (screenshot)
 
 # Use
 
@@ -18,11 +18,11 @@ var screenCapture = new ScreenCaptureService();
 byte[] raw = screenCapture.CaptureWindow(hWnd).GetBytes();
 ```
 
--   capture full screen to file
+-   capture full screen to file in bmp format
 
 ```csharp
 var screenCapture = new ScreenCaptureService();
-screenCapture.CaptureScreen().WriteToFile(path);
+screenCapture.CaptureScreen().WriteToFile(path, ImageFormat.Bmp);
 ```
 
 # License
