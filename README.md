@@ -27,6 +27,9 @@ var screenshot = screenCapture.CaptureScreen();
 screenshot.WriteToFile(path, ImageFormat.Bmp);
 ```
 
+# NuGet
+https://www.nuget.org/packages/Compunet.ScreenCapture
+
 # License
 
 MIT License
