@@ -73,9 +73,9 @@ public class ScreenCaptureService : IScreenCaptureService
         User32.GetWindowRect(hWnd, ref windowRect);
 
         return new(
-            Math.Max(0, windowRect.left),
-            Math.Max(0, windowRect.top),
-            Math.Max(0, windowRect.right - windowRect.left),
-            Math.Max(0, windowRect.bottom - windowRect.top));
+            Math.Max(0, windowRect.Left),
+            Math.Max(0, windowRect.Top),
+            Math.Max(0, windowRect.Right - windowRect.Left),
+            Math.Max(0, windowRect.Bottom - windowRect.Top));
     }
 }
